@@ -54,3 +54,28 @@ Gazebo packages:
 ROS packages:
 
  > sudo apt-get install  ros-kinetic-laser-geometry ros-kinetic-joint-state-publisher
+ 
+## Create n new Ros Workspace
+> mkdir -p catkin_ws/src
+
+Extract content of SelfDrivingCar.tar.gz into catkin_ws/src directory.
+Compile your workspace
+> cd catkin_ws
+> catkin_make
+
+## Execute Nodes
+Two steps here, first run simulator, NOTE; make sure you source this file de-
+vel/setup.bash, in your workspace
+
+>source devel/setup.bash 
+>roslaunch simulator city.launch
+
+Now  You  should  see  Gazebo  opening  with  Car  at  the  center,  This  might
+warm your computer.
+in a seperate terminal launch perception and RVIZ, again source devel/setup.bash
+
+>source devel/setup.bash 
+>roslaunch perception perception.launch
+
+Now You should see RVIZ open with Car Model, Detected Obstacles , LI-
+DAR pointclouds ,Local Costmap and Simulated Camera.
