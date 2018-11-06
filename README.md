@@ -28,7 +28,7 @@ It's convenient if the ROS environment variables are automatically added to your
 
 Setup the packages list: 
 
- > List item sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable \`lsb_release -cs\` main" > /etc/apt/sources.list.d/gazebo-stable.list'
+ > sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable \`lsb_release -cs\` main" > /etc/apt/sources.list.d/gazebo-stable.list'
  
 Set up your keys
  > wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
@@ -47,12 +47,10 @@ Install gazebo 8 and dependencies following next order:
 
 ## Additional requirements
 
-ROS packages: 
-
- > sudo apt-get install ros-kinetic-fake-localization ros-kinetic-joy ros-kinetic-voxel-grid ros-kinetic-map-server
+Gazebo packages: 
 
  > sudo apt-get  install libignition-transport4 libignition-transport4-dev libignition-msgs0-dev
 
-ROS control:
+ROS packages:
 
- > sudo apt-get install ros-kinetic-gazebo8-ros-control ros-kinetic-controller-manager ros-kinetic-position-controllers  ros-kinetic-joint-state-controller  ros-kinetic-effort-controllers ros-kinetic-laser-geometry ros-kinetic-joint-state-controller ros-kinetic-joint-state-publisher
+ > sudo apt-get install  ros-kinetic-laser-geometry ros-kinetic-joint-state-publisher
