@@ -13,7 +13,7 @@ Make sure your Debian package index is up-to-date:
 
 Install full ROS version: 
  > sudo apt-get install ros-kinetic-desktop-full
-(Note: When installing make sure openCV is NOT between the requested packages)
+
 
 Before you can use ROS, you will need to initialize rosdep. rosdep enables you to easily install system dependencies for source you want to compile and is required to run some core components in ROS:
  > sudo rosdep init
