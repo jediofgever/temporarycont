@@ -1,3 +1,8 @@
+A descriptive short Youtube Video of This Project
+
+https://www.youtube.com/watch?v=DBmZPy85luU&t=34s
+
+
 ## Installing ROS
 
 Setup your computer to accept software from packages.ros.org. 
